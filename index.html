@@ -66,10 +66,53 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button class="button-close" data-modal-close>
-    <svg width="11" height="11">
+    <svg class="button-close-icon">
         <use href="./images/symbol-defs.svg#icon-button-close"></use>
     </svg>
                 </button>
+                <div class="modal-box">
+
+<b class="modal-headline">Оставьте свои данные, мы вам перезвоним</b>
+<form class="modal-form">
+<label for="username" class="form-input-box">
+  Имя
+    <input type="text" class="form-input" name="username" required>
+   
+<svg class="form-input-icon">
+    <use href="./images/symbol-defs.svg#icon-name"></use>
+</svg>
+    </span>
+</label>
+<label for="phone" class="form-input-box">
+    Телефон
+    <input type="tel" class="form-input" name="phone">
+    <svg class="form-input-icon">
+        <use href="./images/symbol-defs.svg#icon-phone"></use>
+    </svg>
+   
+</label>
+<label for="mail" class="form-input-box">
+    Почта
+    <input type="email" class="form-input" name="mail">
+    <svg class="form-input-icon">
+        <use href="./images/symbol-defs.svg#icon-mail"></use>
+    </svg>
+   
+</label>
+<label for="" class="form-input-box">
+    Комментарий
+    <textarea name="user-msg" class="form-message" placeholder="Введите текст"></textarea>
+    </label>
+    
+        <input type="checkbox" class="policy-checkbox" id="check-policy">
+    <label for="check-policy" class="policy-box">
+        Соглашаюсь с рассылкой и принимаю &nbsp <a href=""> Условия договора</a>
+    </label>
+    <button type="submit" class="modal-submit-button">
+Отправить
+    </button>
+</form>
+                </div>
             </div>
         </div>
         </div>
@@ -422,9 +465,9 @@
                 </div>
 
                 <div class="subscribe-box">
-                    <form class="footer-form"></form>
-    <label class="subscribe-title" for="mail">
-      Подпишитесь на рассылку</label>
+                    <label class="subscribe-title" for="mail">
+                        Подпишитесь на рассылку</label>
+                    <form class="footer-form">
      <input type="email" name="mail" placeholder="E-mail" id="mail" class="mail-input"/>
       <button type="submit" class="footer-button">
       Подписаться
@@ -432,6 +475,7 @@
         <use href="./images/symbol-defs.svg#icon-sendsvg"></use>
          </svg>
          </button>
+        </form>
         </div>
    
             
